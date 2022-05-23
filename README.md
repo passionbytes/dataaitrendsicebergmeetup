@@ -40,11 +40,11 @@ The prebuilt spark image is uploaded to Dockerhub. Out of convenience, the image
 
 If you have an older version of the image, you might need to remove it to upgrade.
 ```bash
-docker image rm tabulario/spark-iceberg && docker-compose pull
+docker image rm passionbytes/spark-iceberg && docker-compose pull
 ```
 
 ### Use `Dockerfile` In This Repo
-To directly use the Dockerfile in this repo (as opposed to pulling the hosted `tabulario/spark-iceberg` image), change the following line in any of the docker-compose files.
+To directly use the Dockerfile in this repo (as opposed to pulling the hosted `passionbytes/spark-iceberg` image), change the following line in any of the docker-compose files.
 ```diff
 -    image: passionbytes/spark-iceberg
 +    build: spark/
@@ -62,4 +62,4 @@ docker buildx build -t passionbytes/spark-iceberg --platform=linux/amd64,linux/a
 For more information on getting started with using Iceberg, checkout
 the [Getting Started](https://iceberg.apache.org/getting-started/) guide in the official docs.
 
-The repository for the docker image is [located on dockerhub](https://hub.docker.com/r/tabulario/spark-iceberg).
+The repository for the docker image is [located on dockerhub](https://hub.docker.com/r/passionbytes/spark-iceberg).

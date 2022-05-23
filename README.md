@@ -46,15 +46,15 @@ docker image rm tabulario/spark-iceberg && docker-compose pull
 ### Use `Dockerfile` In This Repo
 To directly use the Dockerfile in this repo (as opposed to pulling the hosted `tabulario/spark-iceberg` image), change the following line in any of the docker-compose files.
 ```diff
--    image: tabulario/spark-iceberg
+-    image: passionbytes/spark-iceberg
 +    build: spark/
 ```
 
 ### Deploying Changes
-To deploy changes to the hosted docker image `tabulario/spark-iceberg`, run the following. (Requires access to the tabulario docker hub account)
+To deploy changes to the hosted docker image `passionbytes/spark-iceberg`, run the following. (Requires access to the passionbytes docker hub account)
 ```
 cd spark
-docker buildx build -t tabulario/spark-iceberg --platform=linux/amd64,linux/arm64 . --push
+docker buildx build -t passionbytes/spark-iceberg --platform=linux/amd64,linux/arm64 . --push
 ```
 
 ---

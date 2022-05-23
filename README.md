@@ -1,4 +1,4 @@
-# Spark + Iceberg Quickstart Image
+# Spark + Iceberg DataAITrends AbuDhabi Quickstart Image
 
 This is a docker compose environment to quickly get up and running with a Spark environment and a local Iceberg
 catalog. It uses a postgres database as a JDBC catalog.  
